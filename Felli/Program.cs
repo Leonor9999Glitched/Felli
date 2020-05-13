@@ -37,6 +37,10 @@ namespace Felli
                 Console.WriteLine("8 - Só se pode eliminar uma peça por turno.");
                 Console.WriteLine("9 - Ganha quem tiver eliminado as peças todas do inimigo ou tiver conseguido bloquear o inimgo");
 
+                Console.WriteLine("Agora que os jogadores sabem as regras, vamos jogar");
+                Jogo Jogo = new Jogo();
+                Jogo.Jogar();
+
             }
 
             if(escolha == "3")

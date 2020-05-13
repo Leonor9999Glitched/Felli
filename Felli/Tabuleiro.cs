@@ -31,16 +31,24 @@ namespace Felli
             turn = 0;
         }
 
-        public Estado GetEstado(int x, int y)
+        public Estado GetEstado(Posicao pos)
         {
-            return estado[x, y];
+            return estado[pos.Row, pos.Col];
         }
 
         public bool isover
         {
            get
            {
-               for (int i = 0; i < 5; i++)
+               return Empate || Ha_vencedor(Estado.B) || Ha_vencedor(Estado.P);
+           }    
+        }
+
+        public bool Empate
+        {
+            get
+            {
+                for (int i = 0; i < 5; i++)
                {
                    for (int j = 0; j < 5; j++)
                    {
@@ -51,11 +59,42 @@ namespace Felli
                    }
                }
                return true;
-            }    
+            }
         }
-        public bool Jogada(int x, int y)
-        {
 
+        public Estado Vencedor
+        {
+            get
+            {
+                if(Ha_vencedor(Estado.B))
+                {
+                    return Estado.B;
+                }
+
+                if(Ha_vencedor(Estado.P))
+                {
+                    return Estado.P;
+                }
+                return Estado.N;
+            }
+        }
+
+        public bool Jogada(Posicao pos)
+        {
+            if (pos == null)
+                return false;
+            if (pos.Row < 0 || pos.Row > 5 || pos.Col < 0 || pos.Col > 5)
+                return false;
+            if (estado[pos.Row, pos.Col] != Estado.N)
+                return false;
+            estado[pos.Row, pos.Col] = Next_turn;
+            turn++;
+            return true;
+        }
+
+        private bool Ha_vencedor(Estado jogador)
+        {
+            return true;
         }
     }
 }

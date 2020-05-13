@@ -10,7 +10,7 @@ namespace Felli
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    switch(tabuleiro.GetEstado(i, j))
+                    switch(tabuleiro.GetEstado(new Posicao(i, j)))
                     {
                         case Estado.B:
                             Console.Write(" B ");
@@ -25,27 +25,22 @@ namespace Felli
                 }
                 if(i == 0)
                 {
-                    Console.WriteLine("         ");
                     Console.WriteLine(".   .   .");
                 }    
                 if(i == 1)
                 {
-                    Console.WriteLine("         ");
                     Console.WriteLine(" .  .  . ");
                 }
                 if(i == 2)
-                {
-                    Console.WriteLine("         ");
+                { 
                     Console.WriteLine("    .    ");
                 }
                 if(i == 3)
                 {
-                    Console.WriteLine("         ");
                     Console.WriteLine(" .  .  . ");
                 }
                 if(i == 4)
                 {
-                    Console.WriteLine("         ");
                     Console.WriteLine(".   .   .");
                 }
             }
@@ -60,6 +55,17 @@ namespace Felli
             move = int.Parse(aux);
             return move;
         }
+        public void RenderMensagem(string msg)
+        {
+            Console.WriteLine(msg);
+        }
 
+        public void Render_resultado(Tabuleiro tabuleiro)
+        {
+            if(tabuleiro.Empate)
+            {
+                Console.WriteLine("É um empate");
+            }
+        }
     }
 }

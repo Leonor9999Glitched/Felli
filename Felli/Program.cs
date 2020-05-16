@@ -5,10 +5,11 @@ namespace Felli
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        { 
+            //Declaração das variáveis
             string escolha;
 
+            //Dar as boas vindas aos jogadores e pedir o que eles desejam fazer
             Console.WriteLine("Bem-vindos ao jogo Felli");
             Console.WriteLine("Este jogo requer dois jogadores");
             Console.WriteLine("O computador não irá jogar com ninguém.");
@@ -19,12 +20,15 @@ namespace Felli
             escolha = Console.ReadLine();
             
             if(escolha == "1")
-            {   Jogo Jogo = new Jogo();
+            {   
+                //Chama a Classe Jogo e é apartir daí que o jogo começa
+                Jogo Jogo = new Jogo();
                 Jogo.Jogar();
             }    
 
             if(escolha == "2")
             {
+                //Regras do jogo
                 Console.WriteLine("Escolheste ver as regras.");
                 Console.WriteLine("1 - Este jogo é para dois jogadores. O computador não irá jogar com ninguém");
                 Console.WriteLine("2 - Há um total de doze peças. Seis pretas e seis brancas.");
@@ -37,6 +41,7 @@ namespace Felli
                 Console.WriteLine("8 - Só se pode eliminar uma peça por turno.");
                 Console.WriteLine("9 - Ganha quem tiver eliminado as peças todas do inimigo ou tiver conseguido bloquear o inimgo");
 
+                //Despois das regras, o jogo começará
                 Console.WriteLine("Agora que os jogadores sabem as regras, vamos jogar");
                 Jogo Jogo = new Jogo();
                 Jogo.Jogar();
@@ -45,6 +50,7 @@ namespace Felli
 
             if(escolha == "3")
             {
+                //Foi escolhido sair do jogo e o programa termina
                 Console.WriteLine("Escolheste sair.");
                 Console.WriteLine("Até para a próxima.");
             }

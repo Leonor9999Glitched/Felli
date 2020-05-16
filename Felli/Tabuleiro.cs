@@ -4,8 +4,13 @@ namespace Felli
     {
         private Estado[,] estado;
 
+        //Vez do jogador
         private int turn;
 
+        //Verificar quem é o próximo a jogar
+        //Se o turno for par, então são as peças brancas a jogar.
+        //Se o turno for ímpar, então são as peças pretas a jogar
+        //Se o jogo tiver acabado, nenhuma peça será jogada.
         public Estado Next_turn
         {
             get
@@ -31,11 +36,13 @@ namespace Felli
             turn = 0;
         }
 
+        //Obter posição no tabuleiro
         public Estado GetEstado(Posicao pos)
         {
             return estado[pos.Row, pos.Col];
         }
 
+        //Verificar se o jogo já acabou
         public bool isover
         {
            get
@@ -44,6 +51,7 @@ namespace Felli
            }    
         }
 
+        //Verificar se houve empate
         public bool Empate
         {
             get
@@ -62,6 +70,7 @@ namespace Felli
             }
         }
 
+        //Verificar se o vencedor foram as peças brancas ou as peças pretas
         public Estado Vencedor
         {
             get
@@ -79,6 +88,7 @@ namespace Felli
             }
         }
 
+        //Verificar a posição escolhida pelos jogadores
         public bool Jogada(Posicao pos)
         {
             if (pos == null)
@@ -92,6 +102,7 @@ namespace Felli
             return true;
         }
 
+        //Verificar se há vencedor
         private bool Ha_vencedor(Estado jogador)
         {
             return true;

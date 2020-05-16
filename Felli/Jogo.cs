@@ -15,6 +15,10 @@ namespace Felli
             ui = new Interface();
         }
 
+        //A classe mais importante de todo o programa
+        //Rocolhe a informação que o jogador transmite-lhe
+        //Mostra os resultados
+        //Dá mensagens em relação ao jogo.
         public void Jogar()
         {
             do
@@ -40,6 +44,7 @@ namespace Felli
             ui.Render_resultado(tabuleiro);
         }
 
+        //Comandos que o jogador irá usar para colocar as suas peças
         private Posicao MovetoPosition (int move)
         {
             switch(move)

@@ -6,6 +6,7 @@ namespace Felli
 
         public int Col { get; }
 
+        //Nome das coordenadas das posições
         public Posicao (int row, int col)
         {
             Row = row;

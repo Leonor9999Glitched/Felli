@@ -4,6 +4,7 @@ namespace Felli
 {
     public class Interface 
     {
+        //Mostrar tabuleiro
         public void Rendertabuleiro(Tabuleiro tabuleiro)
         {
             for (int i = 0; i < 5; i++)
@@ -23,6 +24,8 @@ namespace Felli
                             break;
                     }
                 }
+
+                //O que desejar em cada
                 if(i == 0)
                 {
                     Console.WriteLine(".   .   .");
@@ -46,6 +49,7 @@ namespace Felli
             }
         }
 
+        //Recolher a jogada feito pelo o jogador
         public int GetJogada(Estado nextPlayer)
         {
             string aux;
@@ -55,11 +59,14 @@ namespace Felli
             move = int.Parse(aux);
             return move;
         }
+        
+        //Mostrar mensagem
         public void RenderMensagem(string msg)
         {
             Console.WriteLine(msg);
         }
 
+        //Mostrar resultados da partida
         public void Render_resultado(Tabuleiro tabuleiro)
         {
             if(tabuleiro.Empate)

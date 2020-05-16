@@ -33,7 +33,7 @@ O programa começa com a classe Main. É através desta classe o programa irá i
 
 - A Classe Posicao é a classe que indica as variaveis que vão ser usadas para indicar a posição onde o jogador irá jogar.
 
-![Diagrama em UML das Classes do Felli](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb39435-99ff-49ad-9246-42032eeea416/ddx3y6r-77ea2f4f-e16e-40b0-a3b8-3afcf9e80782.png/v1/fill/w_1175,h_680,q_70,strp/felli_by_glitchydemonfairy_ddx3y6r-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03NDEiLCJwYXRoIjoiXC9mXC8yZmIzOTQzNS05OWZmLTQ5YWQtOTI0Ni00MjAzMmVlZWE0MTZcL2RkeDN5NnItNzdlYTJmNGYtZTE2ZS00MGIwLWEzYjgtM2FmY2Y5ZTgwNzgyLnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.eeEFRSzVXEUWpSoewtUAthy7sOd6px2pcX-I6LHX4Gg)
+![Diagrama em UML das Classes do Felli](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb39435-99ff-49ad-9246-42032eeea416/ddxbu2q-99f89cd1-82d1-4369-bdda-6e8c9c95db70.png/v1/fill/w_1122,h_712,strp/felli__1__by_glitchydemonfairy_ddxbu2q-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04MTMiLCJwYXRoIjoiXC9mXC8yZmIzOTQzNS05OWZmLTQ5YWQtOTI0Ni00MjAzMmVlZWE0MTZcL2RkeGJ1MnEtOTlmODljZDEtODJkMS00MzY5LWJkZGEtNmU4YzljOTVkYjcwLnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.GYf_-j8G7TXgJ6PMd0B0kgkvDt_SAvE81CYp5h4xGn0)
 
 # Referências
 
